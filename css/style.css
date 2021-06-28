@@ -1,0 +1,324 @@
+
+/* Import External Files */
+
+/* Variables In Partials */
+@import url('Partials/_variable.css');
+/*Global Style Properties */
+@import url('Partials/_global.css');
+
+
+/* Start Navigation Area Style */
+
+header .mainMenu .navbar {
+	padding: 1rem 1rem 0 0;
+}
+header .mainMenu .navbar .nav-item .nav-link {
+	font: normal 600 16px/2px var(--mainFontFamily); /*normal font-weight font-size/line-height font-family*/
+	/*font-family: var(--mainFontFamily);*/
+	text-transform: uppercase;
+	/*font-weight: 600;*/
+	padding: 1rem;
+	color: var(--titleColor);
+}
+header .mainMenu .navbar-nav .active a{
+	background: var(--gradientColor);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+header .mainMenu .navbar-nav a:hover {
+	/*color: var(--primaryColor);*/
+	background: var(--gradientColor);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+/* End Navigation Area Style */
+
+/* ************ Start Main Area Style *********** */
+
+main{
+
+}
+
+/* Start Banner Area Style */
+
+.siteBanner {
+	/*background: url('../images/banner/home-banner.png') no-repeat 0% 50%;*/
+	/*background-position: 0% 50%;*/
+	/*height: 100vh;
+	width: 100%;
+	overflow: hidden;*/
+}
+.siteBanner .siteTitle h3{
+	padding-top: 25%;
+	font-weight: 500;
+}
+.siteBanner .siteTitle h3::after {
+	content: '';
+	height: 2px;
+	width: 18vw;
+	background: var(--textColor);
+	display: inline-block;
+	margin-left: 5%;
+	transform: translateY(-10px);
+}
+.siteBanner .siteTitle h1{
+	font-size: 5rem;
+}
+.siteBanner .siteTitle h4{
+	font-size: 1.5rem;
+}
+.siteBanner .bannerImage img {
+	padding: 4rem 0;
+	width: 30rem;
+}
+
+
+/* End Banner Area Style */
+
+
+/*Start About Area Style */
+
+.about {
+	padding: 6rem 4rem;
+}
+.about .aboutTitle h2 span{
+	display: block;
+}
+.about .aboutTitle .aboutPara p{
+	padding: .4rem 0;
+}
+
+/*End About Area Style */
+
+/*Start Brands Area */
+
+.brands {
+	padding: 1rem 12rem;
+	margin-bottom: 4rem;
+}
+.brands .row .col-lg-4{
+	display: flex;
+	justify-content: center;
+}
+.brands .row .col-lg-4 .brandItem{
+	border: 1px solid var(--borderColor);
+	text-align: center;
+	padding: 1.8rem 0;
+	margin: 0.8rem 0;
+	width: 180px;
+	height: 100px;
+	cursor: pointer;
+	transition: transform .4s ease;
+}
+.brands .row .col-lg-4 .brandItem img {
+	width: 50%;
+}
+.brands .row .col-lg-4 .brandItem:hover {
+	box-shadow: var(--boxShadow);
+	transform: scale(1.1);
+}
+.brands .row .col-lg-4 .brandItem:hover img{
+	filter: brightness(.15);
+}
+.brands .experience{
+	padding-left: 1rem;
+}
+.brands .experience span {
+	display: block;
+}
+.brands .experience .yearsArea{
+	background: url('../images/client-info-bg.png') no-repeat 45px 20px;
+	padding: 2rem 0;
+	width: 40rem;
+	height: 18rem;
+	padding-left: 8rem;
+	position: relative;
+}
+.brands .experience .panelBg {
+	position: absolute;
+	left: -190px;
+	top: 0;
+	background: #ffaeae73;
+	width: 400px;
+	height: 400px;
+	margin-left: 340px;
+	z-index: -1;
+}
+.brands .experience .yearsArea .years {
+	font: normal bold 84px/40px var(--mainFontFamily);
+	color: var(--secondaryColor);
+	z-index: 2;
+}
+.brands .experience .yearsArea h2 span{
+	font: normal 600 22px/30px var(--mainFontFamily);
+}
+.brands .experience .call{
+	padding-left: 10rem;
+}
+.brands .experience .call .callText {
+	
+}
+
+/*End Brands Area */
+
+/*Start Services Area*/
+
+.services {
+	padding: 4rem 2rem;
+}
+.services .servicesTitle{
+	padding: 0 12rem;
+}
+.services .servicesTitle h1{
+	font-size: 32px;
+}
+.services .service{
+	background: rgba(248,252,253,.97);
+	padding: 2rem 0;
+	width: 16rem;
+	height: 80%;
+	margin: 5rem .5rem;
+	transition: box-shadow .6s ease;
+}
+.services .service:hover {
+	box-shadow: var(--boxShadow);
+}
+
+/*End Services Area*/
+
+
+/*Start Product Gallery Area*/
+
+.productGallery{
+	padding: 4rem 0;
+}
+.productGallery .galleryMenu button{
+	background: transparent;
+	border: none;
+	font: normal 600 16px/100px var(--mainFontFamily);
+	text-transform: uppercase;
+}
+.productGallery .galleryMenu button+button{
+	padding-left: 3rem;
+} /*It will select 2nd button and after that*/
+.productGallery .galleryGrid .product .productTitle h4{
+	font: normal 600 24px/12px var(--mainFontFamily);
+}
+.productGallery .galleryGrid .product .productImage a:hover img{
+	filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+	border-radius: 4px;
+}
+
+/*End Products Gallery Area*/
+
+/* Start Clients Review/Testimonial Area Style*/
+
+.clients .clientsTitle{
+	padding: 1rem 6rem;
+}
+.clients .carousel .owl-carousel .client{
+	background: #ffffff10;
+	box-shadow: var(--boxShadow);
+	margin: 2rem 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 1.2rem;
+}
+.clients .carousel .owl-carousel .client .clientImage{
+	padding: 2rem;
+}
+.clients .carousel .owl-carousel .client .clientImage img {
+	width: 120px;
+	height: 120px;
+	border-radius: 4px;
+}
+.clients .carousel .owl-carousel .client .clientInfo{
+	padding-top: 2rem;
+}
+.clients .carousel .owl-carousel .client .clientInfo h4{
+	font: normal 500 21px/20px var(--mainFontFamily);
+}
+.clients .carousel .owl-carousel .client .clientInfo p{
+	font-size: 14px;
+}
+.clients .carousel .owl-carousel .owl-dots .owl-dot.active span{
+	background: var(--primaryColor);
+	width: 12px;
+	height: 12px;
+}
+
+/*End Clients Review/Testimonial Area Style*/
+
+
+/*Start Subscribe Area*/
+
+.subscribe .container{
+	background: url('../images/subscribe-bg.png') no-repeat;
+	padding: 10rem 0;
+	margin: 3rem auto;
+}
+.subscribe .subscribeTitle h4{
+	font: normal 700 30px/30px var(--mainFontFamily);
+	color: whitesmoke;
+}
+.subscribe .subscribeTitle p{
+	color: whitesmoke;
+	padding: 1rem 4rem;
+}
+.subscribe form .input-textbox input{
+	width: 400px;
+	padding: 1.5rem 1rem;
+	border: 1px solid whitesmoke;
+	background: transparent;
+	color: white;
+	font: normal 500 18px/20px var(--mainFontFamily);
+}
+.subscribe form .input-textbox input::placeholder{
+	color: whitesmoke;
+}
+.subscribe form .btn-submit button{
+	background: whitesmoke;
+	color: black;
+	padding: .7rem 2rem;
+}
+.subscribe form .btn-submit button:hover{
+	border: 2px solid transparent;
+}
+
+/*End Subscribe Area*/
+
+/* *********** End Main Area Style ************ */
+
+
+/*Start Footer Area*/
+
+.footer {
+	padding: 5rem 0;
+	background: url('../images/footer-bg.png') no-repeat;
+}
+.footer .footerContent .footerSocial h5{
+	font: normal 500 24px/30px var(--mainFontFamily);
+}
+.footer .footerContent .footerSocial a{
+	text-transform: none;
+}
+.footer .footerContent .footerSocial a i{
+	font-size: 22px;
+	padding: 1rem;
+	color: var(--borderColor);
+	
+}
+.footer .footerContent .footerSocial a i:hover{
+	color: var(--primaryColor);
+}
+
+
+/*End Footer Area*/
+
+
+
+
+

@@ -1,0 +1,14 @@
+/*Responsive Style*/
+
+/*If the viewport is 340px or less*/
+/*body{
+	background: black;
+}*/
+@media only screen and (max-width: 340px){
+	/*header .mainMenu .navbar, header .mainMenu .navbar .navbar-brand,
+	.subscribe .subscribeTitle, .subscribe .subscribeTitle h4, .subscribe .subscribeTitle p,
+	.services, {
+		padding: 2%;
+		margin: 0;
+	}*/
+}
