@@ -7,6 +7,115 @@
 @import url('Partials/_global.css');
 
 
+/* ************************* Variables File Code ***************** */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+:root{
+	--primaryColor: #4458dc;
+	--secondaryColor: #854fee;
+	--titleColor: #141313;
+	--textColor: #777777;
+	--borderColor: #201f1f17;
+	--gradientColor: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+	--shadowColor: 0px 1px 30px rgba(118, 85, 225, 0.3);
+	--boxShadow: 0px 10px 30px rgba(57,56,61,0.205);
+	--mainFontFamily: 'Montserrat', sans-serif;
+}
+
+
+/* *************************** Global File Code ************************ */
+.mainFont{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.titleText{
+	font: normal bold 42px/64px var(--mainFontFamily);
+}
+
+/*Buttons*/
+.btn {
+	padding: .8rem 2.2rem;
+	font: normal 600 16px/20px var(--mainFontFamily);
+	position: relative;
+	/*z-index: 1;*/
+	border: 2px solid transparent;
+	border-radius: 4px;
+}
+.btn.primaryButton{
+	background: var(--gradientColor);
+	background-clip: padding-box;
+	color: whitesmoke;
+	transition: background .5s ease;
+	box-shadow: var(--boxShadow);
+}
+.btn.primaryButton:hover {
+	background: whitesmoke;
+	background-clip: padding-box;
+	color: black;
+}
+.btn.primaryButton::after, .btn.secondaryButton::after {
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: var(--gradientColor);
+	content: '';
+	z-index: -1;
+	border-radius: 4px;
+}
+.btn.secondaryButton {
+	background: white;
+	background-clip: padding-box;
+	transition: background.5s ease;
+}
+.btn.secondaryButton:hover {
+	background: var(--gradientColor);
+	color: whitesmoke;
+	box-shadow: var(--boxShadow);
+}
+
+p.para {
+	color: var(--titleText);
+	font: normal 500 16px/25px var(--mainFontFamily);
+	
+}
+
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active{
+	outline: 0px !important;
+	box-shadow: none !important; 
+}
+
+.title-h1{
+	font: normal bold 40px/42px var(--mainFontFamily);
+}
+
+
+.navbar_fixed {
+	position: fixed;
+	width: 100%;
+	top: -1px;
+	left: 0;
+	right: 0;
+	background: white;
+	box-shadow: var(--boxShadow);
+	z-index: 9;
+	transition: background 1s ease;
+}
+
+
+
+
+
+
 /* Start Navigation Area Style */
 
 header .mainMenu .navbar {
